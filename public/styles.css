@@ -1,0 +1,40 @@
+body {
+  font-family: 'Lato', sans-serif;
+}
+
+.container {
+  max-width: 93%;
+  margin: auto;
+}
+
+ul {
+  display: flex;
+  flex-flow: column;
+  padding: 0;
+  list-style-type: none;
+}
+
+.course {
+  border: solid 1px lightgray;
+  padding: 10px;
+  margin: 5px;
+  text-align: center;
+}
+  
+.course i {
+  width: 100%;
+  font-size: 8em;
+  display: block;
+  text-align: center;
+}
+
+@media all and (min-width: 800px) {
+  ul {
+    flex-flow: row wrap;
+    justify-content: start;
+  }
+
+  .course {
+    width: 30%
+  }
+}

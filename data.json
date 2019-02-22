@@ -1,0 +1,51 @@
+
+{
+  "KEYWORDS": ["javascript", "python", "php", "machine learning", "js"],
+  "COURSES": [
+    {
+      "id": 1,
+      "title": "Python Basics",
+      "source": "TeamTreeHouse",
+      "url": "http://teamTreeHouse.com/python_basics",
+      "summary": "This is the course summary.",
+      "keys": ["python"],
+      "earned_date": ""
+    },
+    {
+      "id": 2,
+      "title": "JavaScript Basics",
+      "source": "TeamTreeHouse",
+      "url": "http://teamTreeHouse.com/javascript_basics",
+      "summary": "This is the course summary.",
+      "keys": ["javascript", "js"],
+      "earned_date": ""
+    },
+    {
+      "id": 3,
+      "title": "PHP Basics",
+      "source": "TeamTreeHouse",
+      "url": "http://teamTreeHouse.com/php_basics",
+      "summary": "This is the course summary.",
+      "keys": ["php"],
+      "earned_date": ""
+    },
+    {
+      "id": 4,
+      "title": "Python Advanced",
+      "source": "TeamTreeHouse",
+      "url": "http://teamTreeHouse.com/python_advanced",
+      "summary": "This is the course summary.",
+      "keys": ["python"],
+      "earned_date": ""
+    },
+    {
+      "id": 5,
+      "title": "The Machine Learning",
+      "source": "TeamTreeHouse",
+      "url": "http://teamTreeHouse.com/machine_learning",
+      "summary": "This is the course summary.",
+      "keys": ["machine learning"],
+      "earned_date": ""
+    }
+  ]
+}

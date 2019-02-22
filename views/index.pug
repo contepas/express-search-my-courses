@@ -1,0 +1,15 @@
+html
+  head
+    title= title
+    link(rel="stylesheet", href="styles.css")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato")
+    link(rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons")
+  body
+    div(class="container")
+      ul
+        each course in courses 
+          li(class="course")
+            i(class="material-icons") account_box
+            h3 #{course.title}
+            p #{course.summary}
+            p #{course.url}
