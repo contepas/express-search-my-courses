@@ -2,7 +2,7 @@
 
 const express = require('express');
 const path = require('path');
-const Courses = require('./models/courses.js');
+const Courses = require('./controllers/courses.js');
 const routes = require('./routes/routes.js');
 const logger = require('morgan');
 
@@ -20,7 +20,7 @@ app.get('/', async (req,res) => {
   try{
     //throw new Error('Cazzarola!');
     const courses = await Courses.getCourses();
-    res.render('index', {title: "Courses", courses: courses.COURSES});
+    res.render('index', {title: "Courses", courses: courses});
   }catch(err){
     res.render('error', {error: err.message})
   }
