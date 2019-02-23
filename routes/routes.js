@@ -1,6 +1,6 @@
 const express = require('express');
 const asyncErrHand = require('../util/asyncErrorHandler.js');
-const Courses = require('../models/courses.js');
+const Courses = require('../controllers/courses.js');
 const router = express.Router();
 
 const keyValidator = async (req, res, next) => {
@@ -23,10 +23,10 @@ router.get('/courses', asyncErrHand(async (req,res) => {
   
 //send a GET requesto to '/courses/:id' to read a single course
 router.get('/courses/:key', keyValidator, asyncErrHand(async (req, res) => {
-    
-    const allCourses = await Courses.getCourses()
-    const courses = allCourses.find(course => course.keys.includes(req.params.key))
-    res.json(courses)
+    const courses = await Courses.findSubject(req.params.key);
+    // const allCourses = await Courses.getCourses()
+    // const courses = allCourses.find(course => course.keys.includes(req.params.key))
+    res.json(courses);
 }));
 
 //send a POST request to '/courses' to create a new course
