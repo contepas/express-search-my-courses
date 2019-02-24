@@ -1,12 +1,6 @@
 const fs = require('fs');
 
 class DataStore {
-    
-    static generateRandomId(){
-        return Math.floor(Math.random() * 10000);
-    }
-
-
     /**
      * Save data in data.json
      * @param {Object} data

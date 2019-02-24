@@ -1,4 +1,5 @@
 const DataStore = require('../models/DataStore');
+const generateRandomId = require('../util/generateRandomId');
 
 /**
  * get Courses from data.json
@@ -50,7 +51,7 @@ async function getCourse(id){
 async function createCourse(newCourse) {
   const courses = await DataStore.getCourses(); 
   
-  newCourse.id = DataStore.generateRandomId(); 
+  newCourse.id = generateRandomId(); 
   courses.COURSES.push(newCourse);
   await DataStore.save(courses); 
   return newCourse; 

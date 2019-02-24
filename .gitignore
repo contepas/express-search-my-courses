@@ -1,2 +1,4 @@
 node_modules
-models/mCourses.js
+models/mdbCourse.js
+models/mdbSubject.js
+mInitialData.json
