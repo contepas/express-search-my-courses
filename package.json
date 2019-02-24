@@ -5,7 +5,8 @@
   "main": "app.js",
   "scripts": {
     "start": "nodemon",
-    "test": "mocha"
+    "test": "mocha",
+    "test:watch": "mocha --watch ./test ./"
   },
   "author": "Pasquale Conte",
   "license": "ISC",
